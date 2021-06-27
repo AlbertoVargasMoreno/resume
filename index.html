@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="curriculum vitae Alberto Vargas Moreno, v1.0">
+
+    <style type = "text/css">
+        body {
+            margin: 0;
+            width: 100%;
+        }
+
+        #presentacion {
+            background-color: #7c243c; color: #ffffff; padding: 30px;
+        }
+        #presentacion > h1, h3 { 
+            font-weight: 100;
+            margin: 0;
+        }
+        #presentacion > h3 {
+            color: #c4a464;
+        }
+        #presentacion > p {
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
+
+        table#contacto {
+            table-layout: fixed;
+            padding: 30px;
+            padding-top: 1em;
+            padding-bottom: 0px;
+            background-color:#641c34;
+            color: #ffffff;
+        }
+        table#contacto td {
+            border-bottom: 1em solid #0000;
+        }
+        table#contacto td a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            font-style: italic;
+        }
+                
+        div#cuerpo {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
+
+        th {
+            text-transform: uppercase;
+            text-align: left;
+            color:#c4a464;
+            /* text-decoration: underline solid 3px; */
+        }
+
+        ul {
+            padding-inline-start: 0;
+            margin-block-start: 0;
+        }
+        li {
+            list-style-type: none;
+        } 
+
+        div#cuerpo > table#conocimientos {
+            text-align: justify;
+        }
+        .description-text {
+            /* color: gray; */
+            font-size: 0.95em;
+        }
+        table#conocimientos .small-info {
+            color: gray;
+            font-size:x-small;
+        }
+        #conocimientos > tbody > tr:nth-child(2) > td > ul > li:nth-child(9) > em > a
+        {
+            color: #c4a464;
+        }
+
+        #softSkills td, #techSkills td {
+            text-align: center;
+            background-color: #c4a464;
+            color: #ffffff;
+            border-radius: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            text-transform: capitalize;
+        }
+        #softSkills td.hide, #techSkills td.hide {
+            background-color: #0000;
+        }
+
+        table#languages {
+            table-layout: fixed;
+        }
+        #languages > tbody > tr > td:nth-child(2) > a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* para pantallas angostas: apilar celdas de #contacto, eliminar relleno en #cuerpo */
+        @media (max-width:570px) {
+            table#contacto td {
+                display: flex;
+            }
+            div#cuerpo {
+                padding-left: 00px;
+                padding-right: 00px;
+                padding-top: 00px;
+            }
+        }
+        
+        /* en pantallas anchas: poner tablas lado a lado */
+        @media (min-width:760px) {
+            #cuerpo {
+                display: flex;
+            }
+            #cuerpo table {
+                flex: 1;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+
+        /* printing style */
+        @media print {
+            html { font-size:small;}
+            body {
+                padding: 0!important;
+                margin: 0!important;
+            }     
+            #cuerpo {
+                display: flex;
+            }
+            #cuerpo table {
+                flex: 1;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        @page { size: auto;  margin: 0mm; }
+
+    </style>
+
+    <title>Alberto Vargas | Curriculum</title>
+
+</head>
+
+<body
+    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+
+    <div id="encabezado">
+
+        <div id="presentacion" >
+            <h1>Alberto Vargas Moreno</h1>
+            <h3>Ingeniero en Comunicaciones y Electrónica</h3>
+                <p>
+                    Aspiro en convertirme en desarrollador full-stack. Disfruto de un gran rango de temas relacionados con las TI, pero mi principal enfoque está en el desarrollo web. No tengo experiencia previa, ni certificaciones. 
+Tengo bases de conocimiento en control, automatización y electrónica. Busco un trabajo en el área de desarrollo web, tengo disponibilidad para trabajar en el área metropolitana o vía remota.
+
+                </p>
+        </div>
+
+        <table id="contacto" width="100%" cellspacing="" >
+            <tr>
+                <td><a href="mailto:vargasmorenoalberto@gmail.com">vargasmorenoalberto@gmail.com</a></td>
+                <td><a href="tel:+527761065101">+52 776 106 5101</a></td>
+            </tr>
+            <tr>
+                <td>Zona Metropolitana del Valle de México</td>
+                <td></td>
+            </tr>
+        </table>
+
+    </div> <!-- termina encabezado -->
+
+    <div id="cuerpo" style="background-color:none;">
+
+        <table id="conocimientos" cellpadding="0" cellspacing="5" width="100%" >
+
+            <tr>
+                <th>Proyectos</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><b>Página Web: Invernadero</b></li>
+                        <li class="description-text">Es un sitio personalizado basado en Bootstrap. Fue diseñado para ser usado por un Invernadero que busca crear su presencia en línea.</li>
+                        <li class="description-text">El próposito de este sitio web es mostrar la oferta de productos que tienen, así que use un diesño despejado y totalmente responsivo</li>
+                        <li><br></li>
+                        <li><b>Página Web: Sastretría</b></li>
+                        <li class="description-text">Esta página web fue construida con el enfoque en la simplicidad, usabilidad y fucionamiento sobre la estética; teniendo como prioridad la velocidad, incluso en equipos viejos.</li>
+                        <li class="description-text">El reto fue intentar mantenerlo lo más ligero posible, agregando funcionalidades importantes para los visitantes</li>
+                        <li><br></li>
+                        <li><b>Desarrollo de firmware: Control de Fase en Corriente Alterna</b> | <em>Ref: <a href="mailto:valverde@cinvestav.mx">valverde@cinvestav.mx</a></em> </li>
+                        <li class="description-text">Enfocado para un sistema de control automático de temperatura, el desarrollo implico el uso de microcontroladores MSP430 y pruebas con circuitos de potencia. El código fue desarrollado en C.</li></li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Cursos</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Linux Essentials</li>
+                        <li class="small-info">Cisco Networking Academy</li>
+                        <li><br></li>
+                        <li>Networking Essentials</li>
+                        <li class="small-info">Cisco Networking Academy</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Educación</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><b>Ingeniería en Comunicaciones y Electrónica</b>, pasante</li>
+                        <li>Escuela Superior de Ingeniería Mecánica y Eléctrica. Instituto Politécnico Nacional</li>
+                        <li class="small-info">Ciudad de México</li>
+                        <li class="small-info">2013-2018</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <!-- <tr>
+                <th>Intereses</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Procesos de control</li>
+                        <li>Mantenimiento de máquinas</li>
+                        <li>Procesamiento de señales</li>
+                    </ul>
+                </td>
+            </tr> -->
+        </table>
+
+        <br>
+
+        <table id="skillsTable" width="100%">
+            <thead>
+                <th>
+                    Habilidades
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <table id="softSkills" cellpadding="3" cellspacing="5" width="100%" >
+                            <tr>
+                                <th colspan="3"><i>Blandas</i></th>
+                            </tr>
+                            <tr>
+                                <td>Resolución problemas</td>
+                                <td>Trabajo en equipo</td>
+                                <td>autodidacta</td>
+                            </tr>
+                            <tr>
+                                <td>Responsabilidad</td>
+                                <td>organización</td>
+                                <td class="hide"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table id="languages" cellpadding="10px" cellspacing="0px" width="100%">
+                            <thead>
+                                <th colspan="2"><i>Idiomas</i></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Inglés</td>
+                                    <td><a href="https://www.efset.org/cert/kgKFT5">Proficiente</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table id="techSkills" cellpadding="6px" cellspacing="08" width="100%">
+                            <thead>
+                                <tr>
+                                    <th colspan="4"><i>Técnicas</i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="hide"></td>
+                                    <td>C</td>
+                                    <td>BASH</td>
+                                    <td>Assembler</td>
+                                </tr>
+                                <tr>
+                                    <td>HTML</td>
+                                    <td>CSS</td>
+                                    <td>Javascript</td>
+                                    <td>GIT</td>
+                                </tr>
+                                <tr>
+                                    <td>SQL</td>
+                                    <td>Bootstrap</td>
+                                    <td>NodeJS</td>
+                                    <td class="hide"></td>
+                                </tr>
+                                <tr>
+                                    <td>Linux</td>
+                                    <td>Windows</td>
+                                    <td>MacOS</td>
+                                    <td class="hide"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+    </div> <!-- termina cuerpo -->
+
+</body>
+
+</html>
