@@ -17,6 +17,19 @@
         #presentacion {
             background-color: #7c243c; color: #ffffff; padding: 30px;
         }
+        .menu {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        aside {
+            font-size: 14px;
+            color: #a09e9e;
+            padding-right: 16px;
+        }
+        aside > a {
+            text-decoration: solid;
+            color: inherit;
+        }
         #presentacion > h1, h3 { 
             font-weight: 100;
             margin: 0;
@@ -143,7 +156,7 @@
                 padding: 0!important;
                 margin: 0!important;
             }
-            #presentacion > p:nth-child(2) > a {
+            .menu {
                 display: none;
             }     
             #cuerpo {
@@ -169,8 +182,12 @@
     <div id="encabezado">
 
         <div id="presentacion" >
+            <div class="menu">
+                <aside><a href="index.html"> Spanish version</a></aside>
+                <aside>|</aside>
+                <aside><a href="#" onclick="window.print();return false;">Print Resume</a>  </aside>
+            </div>
             <h1>Alberto Vargas Moreno</h1>
-            <p><a href="index.html" style="color: #a09e9e;"> Spanish version</a></p>
             <h3>Telecommunications and Electronics Engineer</h3>
                 <p>
                     I am an engineer, and an aspiring full-stack profesional. I enjoy a wide range of IT topics, but my principal goal is to be a software developer. I had no prior experience, no certifications. I'd like to found projects where I can learn. I'm available to work in the Greater Mexico City zone or remote.
