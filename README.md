@@ -3,5 +3,5 @@
 Available [here](https://albertovargasmoreno.github.io/resume/)
 
 ## todo
-- [] translate to spanish
-- [] imperative needing to refactor the skills table for mobile
+- [x] translate to spanish
+- [x] imperative needing to refactor the skills table for mobile
