@@ -63,6 +63,9 @@
             text-decoration: none;
             color: inherit;
         }
+        a {
+            text-decoration: none;
+        }
         a:hover {
             font-style: italic;
         }
@@ -104,6 +107,22 @@
             color: #c4a464;
         }
 
+        th._subtitulo {
+            padding-left: 1rem;
+            font-size: 0.8rem;
+        }
+        ._skill {
+            display: inline-block;
+            background-color: #c4aa5c;
+            color: #fff;
+            margin: 5px;
+            padding: 4px 10px 5px;
+            border-radius: 5px;
+            /* font-size: .9em; */
+        }
+        ._skills_container {
+            margin-block-end: 0.4em;
+        }
         #softSkills td, #techSkills td {
             text-align: center;
             background-color: #c4a464;
@@ -231,13 +250,13 @@
                         <li>Tailor shop webpage</li>
                         <li class="description-text">This page was build with the focus on simplicity, usabilty, and fast performance over aesthetics.</li>
                         <li class="description-text">The challenge was trying to keep it the most lightweight possible.</li> -->
-                        <li><br></li>
                         <li>
-                            Firmware development: AC phase controller| <em>Ref: <a href="mailto:valverde@cinvestav.mx">valverde@cinvestav.mx</a></em> 
+                            <b>Firmware development: AC phase controller</b> | <em class="small-info">Ref: <a href="mailto:valverde@cinvestav.mx">valverde@cinvestav.mx</a></em> 
                         </li>
                         <li class="description-text">
                             The software was aimed for a temperature control, the development involved the use of microcontrollers MSP430 and performance tests with power circuits. The source code was developed in C.
                         </li>
+                        <li class="small-info"> sep/2018 - mar/2019</li>
                     </ul>
                 </td>
             </tr>
@@ -248,7 +267,7 @@
             <tr>
                 <td>
                     <ul>
-                        <li>Cybersecurity Essentials</li>
+                        <li><b>Cybersecurity Essentials</b></li>
                         <li class="small-info">Cisco Networking Academy</li>
                         <li class="description-text"> 
                             Foundational knowledge of cybersecurity, including the basics of network security, DevSecOps (Development, Security, Operations), encryption and cybersecurity laws. Introduction to tactics and techniques used by Black Hats, and the principles of Confidentiality, Integrity and Availability (CIA) used by White Hats to defend networks. Practice of critical thinking and problem solving skills
@@ -256,7 +275,7 @@
 
                         <li><br></li>
 
-                        <li>Linux Essentials</li>
+                        <li><b>Linux Essentials</b></li>
                         <li class="small-info">Cisco Networking Academy</li>
                         <li class="description-text"> 
                             This training gives a good working knowledge of Linux, from both a graphical and command line perspective, 
@@ -265,7 +284,7 @@
 
                         <li><br></li>
 
-                        <li>Networking Essentials</li>
+                        <li><b>Networking Essentials</b></li>
                         <li class="small-info">Cisco Networking Academy</li>
                         <li class="description-text"> 
                             Course focused in the knowledge of fundamentals of networking, how devices communicate, network addressing and services, how to build a home or small office network and configure basic security, basics of configuring Cisco devices, and the basics of testing and troubleshooting network problems. 
@@ -314,30 +333,26 @@
             </thead>
             <tbody>
                 <tr>
+                    <th class="_subtitulo"><i>Soft skills</i></th>
+                </tr>
+                <tr>
                     <td>
-                        <table id="softSkills" cellpadding="3" cellspacing="5" width="100%" >
-                            <tr>
-                                <th colspan="3"><i>Soft skills</i></th>
-                            </tr>
-                            <tr>
-                                <td>Troubleshooting</td>
-                                <td>Team work</td>
-                                <td>Self-taught</td>
-                            </tr>
-                            <tr>
-                                <td>Responsibility</td>
-                                <td>Organization</td>
-                                <td>Critical Thinking</td>
-                            </tr>
-                        </table>
+                        <ul class="_skills_container">
+                            <li class="_skill">Troubleshooting</li>
+                            <li class="_skill">Team work</li>
+                            <li class="_skill">Self-taught</li>
+                            <li class="_skill">Responsibility</li>
+                            <li class="_skill">Organization</li>
+                            <li class="_skill">Critical Thinking</li>
+                        </ul>
                     </td>
+                </tr>
+                <tr>
+                    <th class="_subtitulo"><i>Languages</i></th>
                 </tr>
                 <tr>
                     <td>
                         <table id="languages" cellpadding="10px" cellspacing="0px" width="100%">
-                            <thead>
-                                <th colspan="2"><i>Languages</i></th>
-                            </thead>
                             <tbody>
                                 <tr>
                                     <td>English</td>
@@ -348,40 +363,36 @@
                     </td>
                 </tr>
                 <tr>
+                    <th class="_subtitulo"><i>Technical</i></th>
+                </tr>
+                <tr>
                     <td>
-                        <table id="techSkills" cellpadding="6px" cellspacing="08" width="100%">
-                            <thead>
-                                <tr>
-                                    <th colspan="4"><i>Technical</i></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Ethernet Networks</td>
-                                    <td>IPv4, IPv6 Fundamentals</td>
-                                    <td>DHCP</td>
-                                    <td>Network Security</td>
-                                </tr>
-                                <tr>
-                                    <td>Linux</td>
-                                    <td >Filesystem Hierarchy Standard</td>
-                                    <td >DPKG</td>
-                                    <td>Encryption</td>
-                                </tr>
-                                <tr>
-                                    <td>C</td>
-                                    <td>BASH</td>
-                                    <td>NodeJS</td>
-                                    <td>GIT</td>
-                                </tr>
-                                <tr>
-                                    <td>Debian/Ubuntu</td>
-                                    <td >SUSE</td>
-                                    <td>Windows</td>
-                                    <td>MacOS</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <ul class="_skills_container">
+                            <li class="_skill">IPv4, IPv6 Fundamentals</li>
+                            <li class="_skill">Ethernet Networks</li>
+                            <li class="_skill">DHCP</li>
+                            <li class="_skill">DNS</li>
+
+                            <li class="_skill">Network Security</li>
+                            <li class="_skill">Encryption</li>
+                        </ul>
+                        <ul class="_skills_container">
+                            <li class="_skill">Filesystem Hierarchy Standard</li>
+                            <li class="_skill">Linux</li>
+                            <li class="_skill">dpkg</li>
+                            <li class="_skill">bash</li>
+                        </ul>
+                        <ul class="_skills_container">
+                            <li class="_skill">Debian/Ubuntu</li>
+                            <li class="_skill">SUSE</li>
+                            <li class="_skill">Windows</li>
+                            <li class="_skill">MacOS</li>
+                        </ul>
+                        <ul class="_skills_container">
+                            <li class="_skill">C/C++</li>
+                            <li class="_skill">SQL</li>
+                            <li class="_skill">GIT</li>
+                        </ul>
                     </td>
                 </tr>
             </tbody>
