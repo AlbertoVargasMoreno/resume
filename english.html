@@ -9,156 +9,156 @@
     <meta name="description" content="curriculum vitae Alberto Vargas Moreno, v1.0">
 
     <style type = "text/css">
-body {
-    margin: 0;
-    width: 100%;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
-a:hover {
-    font-style: italic;
-}
+        body {
+            margin: 0;
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            font-style: italic;
+        }
 
-#presentacion {
-    background-color: #7c243c; color: #ffffff; padding: 30px;
-}
-.menu {
-    display: flex;
-    margin-bottom: 15px;
-}
-.menu > aside {
-    font-size: 14px;
-    color: #a09e9e;
-    padding-right: 16px;
-}
-#presentacion > h1, h3 { 
-    font-weight: 100;
-    margin: 0;
-}
-#presentacion > h3 {
-    color: #c4a464;
-}
-#presentacion > p {
-    margin-top: 16px;
-    margin-bottom: 0;
-}
+        #presentacion {
+            background-color: #7c243c; color: #ffffff; padding: 30px;
+        }
+        .menu {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .menu > aside {
+            font-size: 14px;
+            color: #a09e9e;
+            padding-right: 16px;
+        }
+        #presentacion > h1, h3 { 
+            font-weight: 100;
+            margin: 0;
+        }
+        #presentacion > h3 {
+            color: #c4a464;
+        }
+        #presentacion > p {
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
 
-table#contacto {
-    table-layout: fixed;
-    padding: 30px;
-    padding-top: 1em;
-    padding-bottom: 0px;
-    background-color:#641c34;
-    color: #ffffff;
-}
-table#contacto td {
-    border-bottom: 1em solid #0000;
-}
-        
-div#cuerpo {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-}
+        table#contacto {
+            table-layout: fixed;
+            padding: 30px;
+            padding-top: 1em;
+            padding-bottom: 0px;
+            background-color:#641c34;
+            color: #ffffff;
+        }
+        table#contacto td {
+            border-bottom: 1em solid #0000;
+        }
+                
+        div#cuerpo {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        }
 
-th {
-    text-transform: uppercase;
-    text-align: left;
-    color:#c4a464;
-}
+        th {
+            text-transform: uppercase;
+            text-align: left;
+            color:#c4a464;
+        }
 
-ul {
-    padding-inline-start: 0;
-    margin-block-start: 0;
-}
-li {
-    list-style-type: none;
-} 
+        ul {
+            padding-inline-start: 0;
+            margin-block-start: 0;
+        }
+        li {
+            list-style-type: none;
+        } 
 
-div#cuerpo > table#conocimientos { 
-    text-align: justify; 
-}
-.description-text {
-    font-size: 0.90em;
-}
-table#conocimientos .small-info {
-    color: gray;
-    font-size:x-small;
-}
+        div#cuerpo > table#conocimientos { 
+            text-align: justify; 
+        }
+        .description-text {
+            font-size: 0.90em;
+        }
+        table#conocimientos .small-info {
+            color: gray;
+            font-size:x-small;
+        }
 
-th._subtitulo {
-    padding-left: 1rem;
-    font-size: 0.8rem;
-}
-._skill {
-    display: inline-block;
-    background-color: #c4aa5c;
-    color: #fff;
-    margin: 5px;
-    padding: 4px 10px 5px;
-    border-radius: 5px;
-    /* font-size: .9em; */
-}
-._skills_container {
-    margin-block-end: 0.4em;
-}
-table#languages {
-    table-layout: fixed;
-}
+        th._subtitulo {
+            padding-left: 1rem;
+            font-size: 0.8rem;
+        }
+        ._skill {
+            display: inline-block;
+            background-color: #c4aa5c;
+            color: #fff;
+            margin: 5px;
+            padding: 4px 10px 5px;
+            border-radius: 5px;
+            /* font-size: .9em; */
+        }
+        ._skills_container {
+            margin-block-end: 0.4em;
+        }
+        table#languages {
+            table-layout: fixed;
+        }
 
-/* 
-    para pantallas angostas < 570px: 
-        apilar celdas de la tabla #contacto, 
-        eliminar relleno/margen del contenedor #cuerpo 
-        dar un margen a la tabla #conocimientos
-*/
-@media (max-width:570px) {
-    table#contacto td {
-        display: flex;
-    }
-    div#cuerpo {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
-    }
-}
+        /* 
+            para pantallas angostas < 570px: 
+                apilar celdas de la tabla #contacto, 
+                eliminar relleno/margen del contenedor #cuerpo 
+                dar un margen a la tabla #conocimientos
+        */
+        @media (max-width:570px) {
+            table#contacto td {
+                display: flex;
+            }
+            div#cuerpo {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
+            }
+        }
 
-/* en pantallas anchas: poner tablas lado a lado */
-@media (min-width:760px) {
-    #cuerpo {
-        display: flex;
-    }
-    #cuerpo table {
-        flex: 1;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-}
+        /* en pantallas anchas: poner tablas lado a lado */
+        @media (min-width:760px) {
+            #cuerpo {
+                display: flex;
+            }
+            #cuerpo table {
+                flex: 1;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
 
-/* 
-Estilo para impresion
-*/
-@media print {
-    html { font-size:small;}
-    body {
-        padding: 0!important;
-        margin: 0!important;
-    }
-    .menu {
-        display: none;
-    }     
-    #cuerpo {
-        display: flex;
-    }
-    #cuerpo table {
-        flex: 1;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-}
-@page { size: auto;  margin: 0mm; }
+        /* 
+        Estilo para impresion
+        */
+        @media print {
+            html { font-size:small;}
+            body {
+                padding: 0!important;
+                margin: 0!important;
+            }
+            .menu {
+                display: none;
+            }     
+            #cuerpo {
+                display: flex;
+            }
+            #cuerpo table {
+                flex: 1;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        @page { size: auto;  margin: 0mm; }
     </style>
 
     <title>Alberto Vargas | Curriculum</title>
@@ -207,15 +207,8 @@ Estilo para impresion
             <tr>
                 <td>
                     <ul>
-                        <!-- <li>Plant-store webpage</li>
-                        <li class="description-text">Is a bootstrap custom website. It was designed to be used by a plant-store who want to create their online presence.</li>
-                        <li class="description-text">This website is meant to show the offer they have. It's fully responsive with an uncluttered layout.</li>
-                        <li><br></li>
-                        <li>Tailor shop webpage</li>
-                        <li class="description-text">This page was build with the focus on simplicity, usabilty, and fast performance over aesthetics.</li>
-                        <li class="description-text">The challenge was trying to keep it the most lightweight possible.</li> -->
                         <li>
-                            <b>Firmware development: AC phase controller</b> | <em class="small-info">Ref: <a href="mailto:valverde@cinvestav.mx">valverde@cinvestav.mx</a></em> 
+                            Firmware development: AC phase controller | <em class="small-info">Ref: <a href="mailto:valverde@cinvestav.mx">valverde@cinvestav.mx</a></em> 
                         </li>
                         <li class="description-text">
                             The software was aimed for a temperature control, the development involved the use of microcontrollers MSP430 and performance tests with power circuits. The source code was developed in C.
@@ -231,7 +224,7 @@ Estilo para impresion
             <tr>
                 <td>
                     <ul>
-                        <li><b>Cybersecurity Essentials</b></li>
+                        <li>Cybersecurity Essentials</li>
                         <li class="small-info">Cisco Networking Academy</li>
                         <li class="description-text"> 
                             Foundational knowledge of cybersecurity, including the basics of network security, DevSecOps (Development, Security, Operations), encryption and cybersecurity laws. Introduction to tactics and techniques used by Black Hats, and the principles of Confidentiality, Integrity and Availability (CIA) used by White Hats to defend networks. Practice of critical thinking and problem solving skills
@@ -239,7 +232,7 @@ Estilo para impresion
 
                         <li><br></li>
 
-                        <li><b>Linux Essentials</b></li>
+                        <li>Linux Essentials</li>
                         <li class="small-info">Cisco Networking Academy</li>
                         <li class="description-text"> 
                             This training gives a good working knowledge of Linux, from both a graphical and command line perspective, 
@@ -248,7 +241,7 @@ Estilo para impresion
 
                         <li><br></li>
 
-                        <li><b>Networking Essentials</b></li>
+                        <li>Networking Essentials</li>
                         <li class="small-info">Cisco Networking Academy</li>
                         <li class="description-text"> 
                             Course focused in the knowledge of fundamentals of networking, how devices communicate, network addressing and services, how to build a home or small office network and configure basic security, basics of configuring Cisco devices, and the basics of testing and troubleshooting network problems. 
@@ -263,10 +256,9 @@ Estilo para impresion
             <tr>
                 <td>
                     <ul>
-                        <li><b>Electronics & Communication Engineering</b>.</li>
-                        <li>Escuela Superior de Ingeniería Mecánica y Eléctrica. Instituto Politécnico Nacional</li>
-                        <li class="small-info">Mexico City</li>
-                        <li class="small-info">2013-2018</li>
+                        <li><b>Electronics & Communication Engineering</b>. No degree.</li>
+                        <li class="description-text">Escuela Superior de Ingeniería Mecánica y Eléctrica. Instituto Politécnico Nacional.</li>
+                        <li class="small-info">Mexico City, 2013-2018</li>
                     </ul>
                 </td>
             </tr>
@@ -320,7 +312,7 @@ Estilo para impresion
                             <tbody>
                                 <tr>
                                     <td>English</td>
-                                    <td><a href="https://www.efset.org/cert/kgKFT5">Proficient</a></td>
+                                    <td><a href="https://www.efset.org/cert/kgKFT5" style="color: #c4a464;">Proficient</a></td>
                                 </tr>
                             </tbody>
                         </table>
