@@ -13,6 +13,13 @@
             margin: 0;
             width: 100%;
         }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            font-style: italic;
+        }
 
         #presentacion {
             background-color: #7c243c; color: #ffffff; padding: 30px;
@@ -21,14 +28,10 @@
             display: flex;
             margin-bottom: 15px;
         }
-        aside {
+        .menu > aside {
             font-size: 14px;
             color: #a09e9e;
             padding-right: 16px;
-        }
-        aside > a {
-            text-decoration: solid;
-            color: inherit;
         }
         #presentacion > h1, h3 { 
             font-weight: 100;
@@ -40,12 +43,6 @@
         #presentacion > p {
             margin-top: 16px;
             margin-bottom: 0;
-        }
-        #presentacion > p:nth-child(2){
-            position: absolute;
-            right: 30px;
-            top: 30px;
-            margin: 0;
         }
 
         table#contacto {
@@ -59,13 +56,6 @@
         table#contacto td {
             border-bottom: 1em solid #0000;
         }
-        table#contacto td a {
-            text-decoration: none;
-            color: inherit;
-        }
-        a:hover {
-            font-style: italic;
-        }
                 
         div#cuerpo {
             padding-left: 30px;
@@ -77,7 +67,6 @@
             text-transform: uppercase;
             text-align: left;
             color:#c4a464;
-            /* text-decoration: underline solid 3px; */
         }
 
         ul {
@@ -90,56 +79,52 @@
 
         div#cuerpo > table#conocimientos { 
             text-align: justify; 
-            padding-top: 20px; 
-            padding-left: 20px; 
-            padding-right: 20px;
         }
         .description-text {
-            /* color: gray; */
             font-size: 0.90em;
         }
         table#conocimientos .small-info {
             color: gray;
             font-size:x-small;
         }
-        #conocimientos > tbody > tr:nth-child(2) > td > ul > li:nth-child(9) > em > a
-        {
-            color: #c4a464;
-        }
 
-        #softSkills td, #techSkills td {
-            text-align: center;
-            background-color: #c4a464;
-            color: #ffffff;
+        th._subtitulo {
+            padding-left: 1rem;
+            font-size: 0.8rem;
+        }
+        ._skill {
+            display: inline-block;
+            background-color: #c4aa5c;
+            color: #fff;
+            margin: 5px;
+            padding: 4px 10px 5px;
             border-radius: 5px;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            text-transform: capitalize;
+            /* font-size: .9em; */
         }
-        #softSkills td.hide, #techSkills td.hide {
-            background-color: #0000;
+        ._skills_container {
+            margin-block-end: 0.4em;
         }
-
         table#languages {
             table-layout: fixed;
         }
-        #languages > tbody > tr > td:nth-child(2) > a {
-            text-decoration: none;
-            color: inherit;
-        }
 
-        /* para pantallas angostas: apilar celdas de #contacto, eliminar relleno en #cuerpo */
+        /* 
+            para pantallas angostas < 570px: 
+                apilar celdas de la tabla #contacto, 
+                eliminar relleno/margen del contenedor #cuerpo 
+                dar un margen a la tabla #conocimientos
+        */
         @media (max-width:570px) {
             table#contacto td {
                 display: flex;
             }
             div#cuerpo {
-                padding-left: 00px;
-                padding-right: 00px;
-                padding-top: 00px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
             }
         }
-        
+
         /* en pantallas anchas: poner tablas lado a lado */
         @media (min-width:760px) {
             #cuerpo {
@@ -152,16 +137,18 @@
             }
         }
 
-        /* printing style */
+        /* 
+        Estilo para impresion
+        */
         @media print {
             html { font-size:small;}
             body {
                 padding: 0!important;
                 margin: 0!important;
-            }     
+            }
             .menu {
                 display: none;
-            }
+            }     
             #cuerpo {
                 display: flex;
             }
@@ -172,7 +159,6 @@
             }
         }
         @page { size: auto;  margin: 0mm; }
-
     </style>
 
     <title>Alberto Vargas | Curriculum</title>
@@ -191,8 +177,13 @@
             </div>
             <h1>Alberto Vargas Moreno</h1>
             <h3>Ingeniero en Comunicaciones y Electrónica</h3>
-            <p>
-                Aspiro en convertirme en desarrollador full-stack. Disfruto de un gran rango de temas relacionados con las TI, pero mi principal enfoque está en el desarrollo web. No tengo experiencia previa, ni certificaciones. Tengo bases de conocimiento en control, automatización y electrónica. Busco un trabajo en el área de desarrollo web, tengo disponibilidad para trabajar en el área metropolitana o vía remota.
+            <p> Soy desarrollador de software. Disfruto de un gran rango de temas relacionados con las TI, pero mi principal enfoque está en el desarrollo web. 
+
+Mi formación educativa es en control, automatización, y electrónica. 
+
+Me encantaría participar en espacios de trabajo donde sea bienvenida la mentalidad de contribución y aprendizaje.
+
+Estoy buscando un trabajo en el area de desarrollo web, tengo dispocisión para trabajar en el área metropolitana o vía remota.
             </p>
         </div>
 
@@ -219,20 +210,27 @@
             <tr>
                 <td>
                     <ul>
-                        <li>Página Web: Invernadero</li>
-                        <li class="description-text">Es un sitio personalizado basado en Bootstrap. Fue diseñado para ser usado por un Invernadero que busca crear su presencia en línea.</li>
-                        <li class="description-text">El próposito de este sitio web es mostrar la oferta de productos que tienen, así que use un diesño despejado y totalmente responsivo</li>
-                        <li><br></li>
-                        <li>Página Web: Sastretría</li>
-                        <li class="description-text">Esta página web fue construida con el enfoque en la simplicidad, usabilidad y fucionamiento sobre la estética; teniendo como prioridad la velocidad, incluso en equipos viejos.</li>
-                        <li class="description-text">El reto fue intentar mantenerlo lo más ligero posible, agregando funcionalidades importantes para los visitantes</li>
-                        <li><br></li>
-                        <li>Desarrollo de firmware: Control de Fase en Corriente Alterna | <em>Ref: <a href="mailto:valverde@cinvestav.mx">valverde@cinvestav.mx</a></em> </li>
-                        <li class="description-text">Enfocado para un sistema de control automático de temperatura, el desarrollo implico el uso de microcontroladores MSP430 y pruebas con circuitos de potencia. El código fue desarrollado en C.</li></li>
+                        <li>Landpage: tacode.mx | <em class="small-info">Ref: <a href="mailto:pabloenmexico@gmail.com">pabloenmexico@gmail.com</a></em> </li>
+                        <li class="description-text">
+			  Desarrollo de la página web para el estudio de diseño y desarrollo de software: Tacode. Es una página responsiva, con un estilo minimalista y elegante. Utiliza Bootstrap para el diseño, y jQuery para agregar funciones como el desplazamiento suave.
+                        </li>
+                        <li class="small-info"> feb/2019 - may/2019</li>
                     </ul>
                 </td>
             </tr>
 
+            <tr>
+                <td>
+                    <ul>
+                        <li>Desarrollo de firmware: Control de Fase en Corriente Alterna | <em class="small-info">Ref: <a href="mailto:valverde@cinvestav.mx">valverde@cinvestav.mx</a></em> </li>
+                        <li class="description-text">
+                            Software enfocado para un sistema de control automático de temperatura, el desarrollo implico el uso de microcontroladores MSP430 de texas instruments, conexión de sensores y actuadores, y pruebas con circuitos de potencia. El código fue desarrollado en C
+
+                        </li>
+                        <li class="small-info"> sep/2018 - mar/2019</li>
+                    </ul>
+                </td>
+            </tr>
             <tr>
                 <th>Cursos</th>
             </tr>
@@ -241,20 +239,17 @@
                     <ul>
                         <li>Linux Essentials</li>
                         <li class="small-info">Cisco Networking Academy</li>
-                        <li class="description-text"> Comprensión del sistema operativo Linux </li>
-                        <li class="description-text"> Habilidad para navegar el sistema Linux </li>
-                        <li class="description-text"> Línea de comandos </li>
-                        <li class="description-text"> Conocimiento de seguridad del sistema y permisos de archivos </li>
+                        <li class="description-text"> 
+                            Esta capacitación proporciona buen conocimiento práctico de Linux, desde un entorno gráfico, hasta la línea de comandos; desarrollando la habilidad de navegar a través de cualquiera de las principales distribuciones de Linux. Desarrollo de habilidades para instalar, configurar y ejecutar Linux.
+                        </li>
 
                         <li><br></li>
 
                         <li>Networking Essentials</li>
                         <li class="small-info">Cisco Networking Academy</li>
-                        <li class="description-text"> Explicar la función de servicios comunes de aplicación de capa </li>
-                        <li class="description-text"> Comprensión del proceso de asignación de direcciones por DHCP </li>
-                        <li class="description-text"> Comprensión de IPv4 e IPv6 </li>
-                        <li class="description-text"> Configuración de seguridad para una red</li>
-                        <li class="description-text"> Contruir una red usando equipos Cisco </li>
+                        <li class="description-text"> 
+                            Curso centrado en el conocimiento de los fundamentos de redes, cómo se comunican los dispositivos, direccionamiento y servicios de red, cómo construir una red doméstica o de una oficina pequeña y configurar la seguridad básica, conceptos básicos de configuración de dispositivos Cisco y conceptos básicos de pruebas y soluciónes de problemas de red.
+                        </li>
                     </ul>
                 </td>
             </tr>
@@ -265,26 +260,27 @@
             <tr>
                 <td>
                     <ul>
-                        <li><b>Ingeniería en Comunicaciones y Electrónica</b>, pasante</li>
-                        <li>Escuela Superior de Ingeniería Mecánica y Eléctrica. Instituto Politécnico Nacional</li>
-                        <li class="small-info">Ciudad de México</li>
-                        <li class="small-info">2013-2018</li>
+                        <li><b>Ingeniería en Comunicaciones y Electrónica</b>, Pasante.</li>
+                        <li class="description-text">Escuela Superior de Ingeniería Mecánica y Eléctrica. Instituto Politécnico Nacional.</li>
+                        <li class="small-info">Ciudad de México, 2013-2018</li>
                     </ul>
                 </td>
             </tr>
 
-            <!-- <tr>
+            <!-- 
+            <tr>
                 <th>Intereses</th>
             </tr>
             <tr>
                 <td>
                     <ul>
-                        <li>Procesos de control</li>
-                        <li>Mantenimiento de máquinas</li>
-                        <li>Procesamiento de señales</li>
+                        <li>5G</li>
+                        <li>SaaS</li>
+                        <li>RF</li>
                     </ul>
                 </td>
-            </tr> -->
+            </tr> 
+            -->
         </table>
 
         <br>
@@ -297,74 +293,68 @@
             </thead>
             <tbody>
                 <tr>
+                    <th class="_subtitulo"><i>Blandas</i></th>
+                </tr>
+                <tr>
                     <td>
-                        <table id="softSkills" cellpadding="3" cellspacing="5" width="100%" >
-                            <tr>
-                                <th colspan="3"><i>Blandas</i></th>
-                            </tr>
-                            <tr>
-                                <td>Resolución problemas</td>
-                                <td>Trabajo en equipo</td>
-                                <td>Autodidacta</td>
-                            </tr>
-                            <tr>
-                                <td>Responsabilidad</td>
-                                <td>Organización</td>
-                                <td >Actitud de servicio</td>
-                            </tr>
-                        </table>
+                        <ul class="_skills_container">
+                            <li class="_skill">Resolución de problemas</li>
+                            <li class="_skill">Trabajo en equipo</li>
+                            <li class="_skill">Autodidacta</li>
+                            <li class="_skill">Responsabilidad</li>
+                            <li class="_skill">Organización</li>
+                            <li class="_skill">Pensamiento Crítico</li>
+                        </ul>
                     </td>
+                </tr>
+                <tr>
+                    <th class="_subtitulo"><i>Idiomas</i></th>
                 </tr>
                 <tr>
                     <td>
                         <table id="languages" cellpadding="10px" cellspacing="0px" width="100%">
-                            <thead>
-                                <th colspan="2"><i>Idiomas</i></th>
-                            </thead>
                             <tbody>
                                 <tr>
                                     <td>Inglés</td>
-                                    <td><a href="https://www.efset.org/cert/kgKFT5">Proficiente</a></td>
+                                    <td><a href="https://www.efset.org/cert/kgKFT5" style="color: #c4a464;">Proficiente</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </td>
                 </tr>
                 <tr>
+                    <th class="_subtitulo"><i>Técnicas</i></th>
+                </tr>
+                <tr>
                     <td>
-                        <table id="techSkills" cellpadding="6px" cellspacing="08" width="100%">
-                            <thead>
-                                <tr>
-                                    <th colspan="4"><i>Técnicas</i></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="hide"></td>
-                                    <td>C</td>
-                                    <td>BASH</td>
-                                    <td>Assembler</td>
-                                </tr>
-                                <tr>
-                                    <td>HTML</td>
-                                    <td>CSS</td>
-                                    <td>Javascript</td>
-                                    <td>GIT</td>
-                                </tr>
-                                <tr>
-                                    <td>SQL</td>
-                                    <td>POO</td>
-                                    <td>NodeJS</td>
-                                    <td class="hide"></td>
-                                </tr>
-                                <tr>
-                                    <td>Linux</td>
-                                    <td>Windows</td>
-                                    <td>MacOS</td>
-                                    <td class="hide"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <ul class="_skills_container">
+                            <li class="_skill">POO</li>
+                            <li class="_skill">C/C++</li>
+                            <li class="_skill">SQL</li>
+                            <li class="_skill">GIT</li>
+                        </ul>
+                        <ul class="_skills_container">
+                            <li class="_skill">HTML</li> 
+			    <li class="_skill">CSS</li>
+                            <li class="_skill">Javascript</li>
+                            <li class="_skill">Bootstrap</li>
+                            <li class="_skill">jQuery</li>
+                            <li class="_skill">Node.js</li>
+                            <li class="_skill">Express</li>
+                            <li class="_skill">Mongo DB</li>
+                            <li class="_skill">PHP</li>
+                        </ul>
+                        <ul class="_skills_container">
+                            <li class="_skill">Linux</li>
+                            <li class="_skill">Filesystem Hierarchy Standard</li>
+                            <li class="_skill">dpkg</li>
+                            <li class="_skill">bash</li>
+                        </ul>
+                        <ul class="_skills_container">
+                            <li class="_skill">Debian/Ubuntu</li>
+                            <li class="_skill">SUSE</li>
+                            <li class="_skill">Windows</li> <li class="_skill">MacOS</li>
+                        </ul>
                     </td>
                 </tr>
             </tbody>
