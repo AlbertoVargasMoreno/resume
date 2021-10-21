@@ -5,8 +5,9 @@ Available [here](https://albertovargasmoreno.github.io/resume/)
 ## todo
 - [x] translate to spanish
 - [x] imperative needing to refactor the skills table for mobile
-- [] check grammar, writing style
-- [] adapt spanish version
+- [x] check grammar, writing style, for spanish
+- [x] adapt spanish version
+- [x] check grammar, writing style, for english
 - [] should I justify the presentation text? (About Me)
 
 ## notes
