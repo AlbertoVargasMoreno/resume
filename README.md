@@ -8,4 +8,4 @@ Available [here](https://albertovargasmoreno.github.io/resume/)
 - [x] check grammar, writing style, for spanish
 - [x] adapt spanish version
 - [x] check grammar, writing style, for english
-
+- [x] add github repo
